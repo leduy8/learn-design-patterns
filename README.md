@@ -1,0 +1,1 @@
+Duy learns design pattern with Python.
