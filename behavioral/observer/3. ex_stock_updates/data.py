@@ -1,8 +1,8 @@
 
 # ! This is not a good practice, I'm just lazy.
 class AppleStock:
-    def __init__(self, value) -> None:
-        self.value = value
+    def __init__(self) -> None:
+        self.value = 0
 
     def get(self):
         return self.value
@@ -15,8 +15,8 @@ class AppleStock:
 
 
 class GoogleStock:
-    def __init__(self, value) -> None:
-        self.value = value
+    def __init__(self) -> None:
+        self.value = 0
 
     def get(self):
         return self.value
@@ -29,8 +29,8 @@ class GoogleStock:
 
 
 class AmazonStock:
-    def __init__(self, value) -> None:
-        self.value = value
+    def __init__(self) -> None:
+        self.value = 0
 
     def get(self):
         return self.value
@@ -43,8 +43,8 @@ class AmazonStock:
 
 
 class FacebookStock:
-    def __init__(self, value) -> None:
-        self.value = value
+    def __init__(self) -> None:
+        self.value = 0
 
     def get(self):
         return self.value

@@ -3,10 +3,10 @@ from data_source import DataSource
 from popular_stocks_view import PopularStocksView
 from stock_list_view import StockListView
 
-amazon = AmazonStock(3580.41)
-apple = AppleStock(161.94)
-facebook = FacebookStock(341.06)
-google = GoogleStock(2922.40)
+amazon = AmazonStock()
+apple = AppleStock()
+facebook = FacebookStock()
+google = GoogleStock()
 
 data_source = DataSource()
 data_source.add_stock(amazon)
@@ -20,14 +20,25 @@ stock_list_view = StockListView(data_source)
 data_source.add_observer(stock_list_view)
 data_source.add_observer(popular_stocks_view)
 
-print('Initial stock price: ')
-data_source.get_stocks()
+print('Update google stock to 2922.40')
+data_source.set_stock(google, 2922.40)
 
 print('=================================')
 
-print('Initial popular stocks: ')
-data_source.get_popular_stocks()
+print('Update amazon stock to 3580.41')
+data_source.set_stock(amazon, 3580.41)
 
 print('=================================')
-print('Update google stock to 59.99')
-data_source.set_stock(google, 59.99)
+
+print('Update facebook stock to 341.06')
+data_source.set_stock(facebook, 341.06)
+
+print('=================================')
+
+print('Update apple stock to 161.94')
+data_source.set_stock(apple, 161.94)
+
+print('=================================')
+
+print('Update amazon stock to 59.99')
+data_source.set_stock(amazon, 59.99)
